@@ -64,3 +64,13 @@ caption p {
 .product-description {
     min-height: 40px;
 }
+
+.jumbotron {
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbo-container {
+    margin: 20px 20px 0 20px;
+    padding: 20px 20px 20px 20px;
+}
