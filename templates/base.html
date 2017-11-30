@@ -30,7 +30,7 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     {% if user.is_authenticated %}
-                        <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i> Profile</a></li>
+                        <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i>  Profile</a></li>
                         <li><a href="{% url 'logout' %}"><i class="fa fa-sign-out"></i> Log Out</a></li>
                     {%  else %}
                         <li><a href="{% url 'register' %}"><i class="fa fa-user-plus"></i> Register</a></li>
@@ -67,8 +67,8 @@
         {% block content %} {% endblock %}  
     </div>
     <footer>
-        <div class="container">
-            <p>Made by Code Institute bootcampers</p>
+        <div class="container text-center">
+            <p>Code Institute Django eCommerce Project - Conor Clarke</p>
         </div>
     </footer>
 </body>

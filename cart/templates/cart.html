@@ -13,7 +13,7 @@
         <div class="caption">
             <h3>{{ item.product.name }}</h3>
             <p class="product-description">{{ item.product.description }}</p>
-            <p>{{ item.product.price }}</p>
+            <p>€ {{ item.product.price }}</p>
             <p>
                 
                 <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
@@ -33,10 +33,11 @@
     </div>
     {% endfor %}
 </div>
-<div class="row">
-    <p>Total</p>
-    <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
-    <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
+<hr><br>
+<div class="row row-color">
+    <div class="checkout-padding">
+        <h3>Total: € {{ total }}</h3>
+        <a href="{% url 'checkout' %}" class="btn btn-success" role="button">Checkout</a>
+    </div>
 </div>
-
 {% endblock %}

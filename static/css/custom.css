@@ -72,6 +72,63 @@ caption p {
     height: 300px;
 }
 
+.row-color {
+    background-color: #e6e6e6;
+}
+
+.checkout-padding {
+    padding: 10px;
+}
+
+.call-to-action {
+    font-size: 16px;
+    color: #0F346C;
+    font-weight: 400;
+    text-align: center;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+}
+
+.call {
+    padding-top: 35px;
+    vertical-align: baseline;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.btn-call {
+    border-radius: 6px;
+}
+
+.btn-register {
+    font-size: 18px;
+    line-height: 50.7px;
+    height: 50.7px;
+    padding: 0 33px;
+    margin: 0 auto;
+    text-decoration: none;
+    border: 0px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    background-color: #0F346C;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.ebook {
+    font-size: 30px;
+    font-weight: 400;
+    width: 500px;
+    color: #0F346C;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 @media screen and (max-width: 700px) {
   .navbar-header {
       float: none;
@@ -110,4 +167,13 @@ caption p {
   .collapse.in{
       display:block !important;
   }
+  
+  .row-color {
+    background-color: #e6e6e6;
+    }
+    
+    .checkout-padding {
+        padding: 10px;
+    }
+
 }
