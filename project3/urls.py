@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.conf import settings
 from products.views import all_products
 from accounts import urls as urls_accounts
 from products import urls as urls_products
