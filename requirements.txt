@@ -1,6 +1,5 @@
 Django==1.11.7
 Pillow==4.3.0
-boto==2.48.0
 boto3==1.4.8
 botocore==1.8.3
 chardet==2.2.1
@@ -14,14 +13,11 @@ jmespath==0.9.3
 olefile==0.44
 psycopg2==2.7.3.2
 pycurl==7.19.3
-pygobject==3.12.0
-python-apt==0.9.3.5ubuntu2
 python-dateutil==2.6.1
 pytz==2017.3
 requests==2.2.1
 s3transfer==0.1.11
 six==1.5.2
 stripe==1.75.0
-unattended-upgrades==0.1
 urllib3==1.7.1
 wheel==0.24.0
