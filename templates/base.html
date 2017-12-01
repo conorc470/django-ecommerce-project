@@ -14,8 +14,27 @@
     {% block head_js %}
     {% endblock head_js %}
 </head>
+
 <body>
-    <!-- Fixed masthead -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">Non Fiction Summaries</h2>
+                </div>
+                <div class="modal-body">
+                    <p>With a subscription service of €5 a month, you can get an unlimited number of book summaries,
+                       saving you time and money in the process. If you are just interested in one particular summary, our
+                       online shop allows you to purchase without having to sign up for the subsscription service. 
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+         </div>
+    </div>
     <nav class="navbar navbar-masthead navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">

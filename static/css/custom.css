@@ -82,13 +82,13 @@ caption p {
 
 .call-to-action {
     font-size: 16px;
-    color: #0F346C;
+    color: black;
     font-weight: 400;
     text-align: center;
     width: 500px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 }
 
 .call {
@@ -113,7 +113,7 @@ caption p {
     font-weight: 500;
     text-align: center;
     color: #fff;
-    background-color: #0F346C;
+    background-color: black;
     outline: none;
     cursor: pointer;
     position: relative;
@@ -123,10 +123,17 @@ caption p {
     font-size: 30px;
     font-weight: 400;
     width: 500px;
-    color: #0F346C;
+    color: black;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+.find-out {
+    margin-top: 50px;
+    vertical-align: baseline;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 @media screen and (max-width: 700px) {

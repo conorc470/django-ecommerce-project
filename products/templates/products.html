@@ -5,7 +5,7 @@
             Discover the worlds best advice and ideas on life, death, success and everything in between. 
             Sign up now for a free weekly newsletter with snippets from the great thinkers of the past.
         </div> 
-        <a class="btn btn-register btn-call">Register</a>
+        <a onclick="location.href = '/user/register'" class="btn btn-register btn-call">Register</a>
     </div>
     <div>
         <h2 class="ebook">EBook Summaries</h2>
@@ -34,5 +34,8 @@
                 </div>
             </div>
         {% endfor %}
+    </div>
+    <div class="find-out">
+        <a class="btn btn-register btn-call" data-toggle="modal" data-target="#myModal">Find Out More</a>
     </div>
 {% endblock %}
