@@ -125,6 +125,8 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 ]
 
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -147,9 +149,11 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-# MEDIA_URL = '/media/'
+# TO RUN LOCALLY HAVE THESE TWO UNCOMMENTED #
 # STATIC_URL = '/static/'
+# MEDIA_URL = '/media/'
 
+# TO RUN ON HEROKU HAVE THESE UNCOMMENTED #
 AWS_S3_OBJECT_PARAMETERS = {  # see http://developer.yahoo.com/performance/rules.html#expires
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
@@ -164,17 +168,11 @@ AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 
 STATICFILES_LOCATION = 'static'
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-
 STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
 
 MEDIAFILES_LOCATION = 'media'
 DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-
-
 MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
-
-MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
-
 
    
  
