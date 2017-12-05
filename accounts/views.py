@@ -37,19 +37,13 @@ def login(request):
     args = {'user_form': user_form, 'next': request.GET.get('next', '')}
     return render(request, 'login.html', args)
 
-
-@login_required
-def profile(request):
-    return render(request, 'profile.html')
-
-
 def register(request):
     if request.method == 'POST':
         user_form = UserRegistrationForm(request.POST)
         if user_form.is_valid():
             user_form.save()
 
-            user = auth.authenticate(username=request.POST.get('email'),
+            user = auth.authenticate(username=request.POST.get('username'),
                                      password=request.POST.get('password1'))
 
             if user:
@@ -60,7 +54,7 @@ def register(request):
                     next = request.GET['next']
                     return HttpResponseRedirect(next)
                 else:
-                    return redirect(reverse('index'))
+                    return redirect('index')
             else:
                 messages.error(request, "unable to log you in at this time!")
     else:
@@ -68,3 +62,7 @@ def register(request):
 
     args = {'user_form': user_form}
     return render(request, 'register.html', args)
+    
+@login_required
+def profile(request):
+    return render(request, 'profile.html')
