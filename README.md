@@ -151,3 +151,10 @@ DATABASES = {
 10. The App should run on your browser - note that there will be no products/blog posts as you are running off your own blank database
 11. Log in to the admin panel by going to '127.0.0.1:8000/admin' & log in using the credentials you created for the superuser
 12. You can add products from here
+
+## Running the tests
+
+Automated tests can be viewed in the tests.py file within the separate Apps. 
+To run the tests, in your terminal navigate to the folder with your project in, activate your virtual environment and type:
+
+`$ python manage.py test <app name>`
