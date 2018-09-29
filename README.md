@@ -143,14 +143,25 @@ DATABASES = {
 
 # DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
 ```
-8. In the terminal:
+
+8. Also in setting.py change the following:
+```
+ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'), 'conor-dev-summaries.herokuapp.com']
+```
+
+To this:
+
+```
+ALLOWED_HOSTS = '*'
+```
+9. In the terminal:
     `$ python manage.py migrate` - this will apply migrations to your local sqlite database
     `$ python manage.py createsuperuser` - this will create admin support
     `$ python manage.py runserver` - should say starting development server..
-9. Go to your browser & type '127.0.0.1:8000' in the address bar
-10. The App should run on your browser - note that there will be no products/blog posts as you are running off your own blank database
-11. Log in to the admin panel by going to '127.0.0.1:8000/admin' & log in using the credentials you created for the superuser
-12. You can add products from here
+10. Go to your browser & type '127.0.0.1:8000' in the address bar
+11. The App should run on your browser - note that there will be no products/blog posts as you are running off your own blank database
+12. Log in to the admin panel by going to '127.0.0.1:8000/admin' & log in using the credentials you created for the superuser
+13. You can add products from here
 
 ## Running the tests
 
