@@ -16,7 +16,7 @@ psycopg2==2.7.3.2
 pycurl==7.19.3
 python-dateutil==2.6.1
 pytz==2017.3
-requests==2.2.1
+requests==2.20.0
 s3transfer==0.1.11
 six==1.5.2
 stripe==1.75.0
